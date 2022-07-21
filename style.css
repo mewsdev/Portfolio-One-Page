@@ -2,17 +2,22 @@
 body{
     background-color: #141430;
     background-image: url("docs/assets/images/fundostars.gif");
-    
+    font-family: 'Tiro Kannada', serif;
 }
 
 h1{
     color: aqua;
-    font-size: 25px;
+    font-size: 27px;
     z-index: 10;
 }
 
 h2{
     color: #f2f2f2;
+    font-size: 20px;
+    z-index: 10;
+}
+h3{
+    color: #f3aeee;
     font-size: 20px;
     z-index: 10;
 }
@@ -22,7 +27,7 @@ h2{
 }
 
 .top{
-    padding: 10px;
+    padding: 5px;
     justify-content: right;
     background-color: azure;
     
@@ -58,7 +63,7 @@ li:hover{
 }
 
 .ti{
-    padding: 140px 130px;
+    padding: 40px 130px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -67,7 +72,7 @@ li:hover{
     z-index: 10;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:670px) {
     .ti{
         padding: 100px 20px;
         flex-direction: column;
@@ -75,22 +80,26 @@ li:hover{
     .planetas .azul{
         top: -60px;
         left: 0px;
+        width: 100px;
     }
     
     .planetas .aqua{
-        top: 680px;
+        top: 900px;
         left: 0px;
+        width: 100px;
     }
     
     .planetas .blue{
-        left: 350px;
+        left: 100px;
         top: -70px;
+        width: 100px;
     
     }
     
     .planetas .pink{
-        left: 350px;
+        left: 150px;
         top: 690px;
+        width: 100px;
     }
 }
 
@@ -101,25 +110,30 @@ li:hover{
     .planetas .azul{
         top: -60px;
         left: 0px;
+        width: 150px;
     }
     
     .planetas .aqua{
         top: 680px;
         left: 0px;
+        width: 150px;
     }
     
     .planetas .blue{
         left: 760px;
         top: -60px;
-    
+        width: 150px;
     }
     
     .planetas .pink{
         left: 760px;
         top: 690px;
+        width: 150px;
     }
 }
-
+.topo{
+    z-index: 10;
+}
 .maxtext{
     max-width: 600px;
     z-index: 10;
@@ -159,6 +173,7 @@ li:hover{
     display: flex;
     position: absolute;
     z-index: 0;
+    width: 180px;
 
     transform: rotate(-26.5deg);
     transform: translatey(0px);
