@@ -1,0 +1,210 @@
+
+body{
+    background-color: #141430;
+    background-image: url("/new/docs/assets/images/fundostars.gif");
+    
+}
+
+h1{
+    color: aqua;
+    font-size: 25px;
+    z-index: 10;
+}
+
+h2{
+    color: #f2f2f2;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.pic {
+    padding-top: 10px;
+}
+
+.top{
+    padding: 10px;
+    justify-content: right;
+    background-color: azure;
+    
+}
+
+ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 25px;
+    align-items: center;
+    margin-right: 40px;
+    z-index: 9;
+    
+}
+
+li{
+    transition: transform 100ms cubic-bezier(.65,.05,.36,1);
+}
+li:hover{
+    transform: scale(1.08);
+    cursor:pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding: 10px 15px;
+    z-index: 10;
+}
+.eu{
+}
+
+.ti{
+    padding: 140px 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    z-index: 10;
+}
+
+@media screen and (max-width:600px) {
+    .ti{
+        padding: 100px 20px;
+        flex-direction: column;
+    }
+    .planetas .azul{
+        top: -60px;
+        left: 0px;
+    }
+    
+    .planetas .aqua{
+        top: 680px;
+        left: 0px;
+    }
+    
+    .planetas .blue{
+        left: 350px;
+        top: -70px;
+    
+    }
+    
+    .planetas .pink{
+        left: 350px;
+        top: 690px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .ti{
+        padding: 100px 20px;
+    }
+    .planetas .azul{
+        top: -60px;
+        left: 0px;
+    }
+    
+    .planetas .aqua{
+        top: 680px;
+        left: 0px;
+    }
+    
+    .planetas .blue{
+        left: 760px;
+        top: -60px;
+    
+    }
+    
+    .planetas .pink{
+        left: 760px;
+        top: 690px;
+    }
+}
+
+.maxtext{
+    max-width: 600px;
+    z-index: 10;
+}
+
+.fim{
+    display: flex;
+    justify-content: center;
+    z-index: 8;
+    
+}
+
+.botao {
+	box-shadow: 3px 4px 0px 0px #48CAE4;
+	background-color: #fafafa;
+	border-radius:15px;
+	border:1px solid #eddfed;
+	display:inline-block;
+	cursor:pointer;
+	color:#48CAE4;
+	font-family:Arial;
+	font-size:25px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4f939f;
+    z-index: 10;
+}
+.botao:hover {
+	background-color:#e0f7f9;
+}
+.botao:active {
+	position:relative;
+	top:1px;
+}
+
+.planetas{
+    display: flex;
+    position: absolute;
+    z-index: 0;
+
+    transform: rotate(-26.5deg);
+    transform: translatey(0px);
+    
+	
+}
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-40px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+
+.azul{
+    top: 0px;
+    left: 16px;
+    animation: float 7s ease-in-out infinite;
+    display: inline-block;
+}
+
+.aqua{
+    top: 600px;
+    left: 50px;
+    z-index: 0;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+.blue{
+    left: 1650px;
+    top: 0px;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+.pink{
+    left: 1650px;
+    top: 620px;
+
+    animation: float 8s ease-in-out infinite;
+}
