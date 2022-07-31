@@ -71,37 +71,36 @@ li:hover{
     justify-items: center;
     z-index: 10;
 }
-
-@media screen and (max-width:670px) {
-    .ti{
-        padding: 100px 20px;
-        flex-direction: column;
-    }
-    .planetas .azul{
-        top: -60px;
-        left: 0px;
-        width: 100px;
-    }
-    
-    .planetas .aqua{
-        top: 900px;
-        left: 0px;
-        width: 100px;
-    }
-    
-    .planetas .blue{
-        left: 100px;
-        top: -70px;
-        width: 100px;
-    
-    }
-    
-    .planetas .pink{
-        left: 150px;
-        top: 690px;
-        width: 100px;
-    }
+.azul{
+    top: 0px;
+    left: 16px;
+    animation: float 7s ease-in-out infinite;
+    display: inline-block;
 }
+
+.aqua{
+    top: 600px;
+    left: 50px;
+    z-index: 0;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+.blue{
+    left: 1650px;
+    top: 0px;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+.pink{
+    left: 1650px;
+    top: 620px;
+
+    animation: float 8s ease-in-out infinite;
+}
+
+
 
 @media screen and (max-width:1024px){
     .ti{
@@ -131,6 +130,38 @@ li:hover{
         width: 150px;
     }
 }
+@media screen and (max-width:670px) {
+    .ti{
+        padding: 100px 20px;
+        flex-direction: column;
+    }
+    .planetas .azul{
+        top: -60px;
+        left: 0px;
+        width: 150px;
+    }
+    
+    .planetas .aqua{
+        top: 900px;
+        left: 0px;
+        width: 100px;
+    }
+    
+    .planetas .blue{
+        left: 100px;
+        top: -70px;
+        width: 100px;
+        display: none;
+    }
+    
+    .planetas .pink{
+        left: 150px;
+        top: 690px;
+        width: 100px;
+        display: none;
+    }
+}
+
 .topo{
     z-index: 10;
 }
@@ -195,31 +226,3 @@ li:hover{
 	}
 }
 
-.azul{
-    top: 0px;
-    left: 16px;
-    animation: float 7s ease-in-out infinite;
-    display: inline-block;
-}
-
-.aqua{
-    top: 600px;
-    left: 50px;
-    z-index: 0;
-
-    animation: float 4s ease-in-out infinite;
-}
-
-.blue{
-    left: 1650px;
-    top: 0px;
-
-    animation: float 3s ease-in-out infinite;
-}
-
-.pink{
-    left: 1650px;
-    top: 620px;
-
-    animation: float 8s ease-in-out infinite;
-}
