@@ -16,6 +16,16 @@ h2{
     font-size: 20px;
     z-index: 10;
 }
+.projetos{
+    color: #d6f2fd;
+    font-size: 22px;
+    z-index: 10;
+    text-decoration-line: none;
+}
+.projetos:hover{
+    color: #eddfed;
+    cursor:pointer;
+}
 h3{
     color: #f3aeee;
     font-size: 20px;
